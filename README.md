@@ -1,11 +1,11 @@
 # ARHAM.exe // PORTFOLIO_V2
 
 ```
-    ___    ____  __  ______    __  ___      ________  ______
-   /   |  / __ \/ / / / __ \  /  |/  /     / ____/ / / /   |
-  / /| | / /_/ / /_/ / /_/ / / /|_/ /_____/ /_  / / / / /| |
- / ___ |/ _, _/ __  / __  | / /  / /_____/ __/ / /_/ / ___ |
-/_/  |_/_/ |_/_/ /_/_/ |_| /_/  /_/     /_/    \____/_/  |_|
+    ___    ____  __  ______    __  ___          ____  ____  ____  __________________  __    ________ 
+   /   |  / __ \/ / / / __ \  /  |/  /         / __ \/ __ \/ __ \/_  __/ ____/ __ \/ /   /  _/ __ \
+  / /| | / /_/ / /_/ / /_/ / / /|_/ /  ______ / /_/ / / / / /_/ / / / / /_  / / / / /    / // / / /
+ / ___ |/ _, _/ __  / __  | / /  / /  /_____// ____/ /_/ / _, _/ / / / __/ / /_/ / /____/ // /_/ / 
+/_/  |_/_/ |_/_/ /_/_/ |_| /_/  /_/         /_/    \____/_/ |_| /_/ /_/    \____/_____/___/\____/  
                                                             
 >> SYSTEM_STATUS: ONLINE
 >> THEME: NEO_BRUTALISM
@@ -101,11 +101,11 @@ It's not about being pretty. It's about being **BOLD**.
 ## /// CONTACT_COORDINATES
 
 **TRANSMISSION OPEN:**
-- **MAIL**: `hello@arham.dev`
+- **MAIL**: `topiwalaarham@gmail.com`
 - **GITHUB**: `Arham43-ops`
 - **LOCATION**: `Remote / Earth`
 
 > "I build digital products that refuse to be boring."
 
 ---
-**© 2024 ARHAM.exe // SYSTEM_END**
+**© 2025 ARHAM.exe // SYSTEM_END**
