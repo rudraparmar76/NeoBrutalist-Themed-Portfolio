@@ -62,7 +62,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm">
-        <p>© 2025 RUDRA.exe // SYSTEM_END</p>
+        <p>© 2026 RUDRA.exe // SYSTEM_END</p>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">
