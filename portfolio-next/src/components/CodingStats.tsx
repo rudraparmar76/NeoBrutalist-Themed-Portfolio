@@ -209,7 +209,7 @@ export default function CodingStats() {
                       Bhagubhai Mafatlal Polytechnic
                     </div>
                     <div className="mt-2 inline-block bg-neo-green/20 text-neo-green px-2 py-0.5 font-[family-name:var(--font-mono)] text-xs font-bold border border-neo-green/30">
-                      GPA: 3.8/4.0
+                      GPA: 9.54
                     </div>
                   </div>
                 </div>
