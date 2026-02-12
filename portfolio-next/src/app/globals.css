@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-neo-yellow: #FBFF48;
+  --color-neo-pink: #FF70A6;
+  --color-neo-blue: #3B82F6;
+  --color-neo-green: #33FF57;
+  --color-neo-purple: #A855F7;
+  --color-neo-orange: #FF9F1C;
+  --color-neo-red: #FF2A2A;
+  --color-neo-white: #FFFDF5;
+  --color-neo-black: #121212;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --shadow-hard: 4px 4px 0px 0px #000;
+  --shadow-hard-sm: 2px 2px 0px 0px #000;
+  --shadow-hard-lg: 8px 8px 0px 0px #000;
+  --shadow-hard-xl: 12px 12px 0px 0px #000;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFDF5;
+  background-image:
+    radial-gradient(#000 1px, transparent 1px),
+    linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+  background-size: 40px 40px, 100px 100px, 100px 100px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+::selection {
+  background-color: #121212;
+  color: #FBFF48;
+}
+
+/* Custom Cursor */
+#cursor {
+  pointer-events: none;
+  position: fixed;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
+}
+
+/* Marquee Animations */
+.marquee-container {
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee-scroll 40s linear infinite;
+  width: max-content;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Glitch Effect on Hover */
+.glitch-hover:hover {
+  animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+@keyframes glitch-anim {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Text Stroke */
+.text-stroke-black {
+  -webkit-text-stroke: 3px black;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #33FF57;
+  border: 2px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FBFF48;
+}
