@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "RUDRA | Full Stack Brutalist",
+	title: "Rudra Portfolio",
 	description:
 		"Rudra Parmar | Full Stack Developer specializing in scalable backend systems, secure API architectures, and responsive web interfaces.",
 	keywords: [
