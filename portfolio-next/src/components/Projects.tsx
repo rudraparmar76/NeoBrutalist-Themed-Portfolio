@@ -41,7 +41,7 @@ const projects = [
       "Semantic Search for Local Documents. Scans PDF, DOCX & TXT files, chunks text, embeds with SentenceTransformers, and builds a FAISS index for lightning-fast similarity search with a simple CLI.",
     image: "/Assets/images/Intellifile.jpg",
     tags: ["Electron", "Python", "FAISS", "SentenceTransformers", "SQLite", "ML"],
-    link: "https://github.com/rudraparmar76",
+    link: "https://github.com/rishivejani15/Intellifile",
     hoverColor: "group-hover:text-neo-green",
     offset: true,
     wip: true,
