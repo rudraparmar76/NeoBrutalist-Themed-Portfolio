@@ -194,7 +194,7 @@ export default function CodingStats() {
                       DJ Sanghvi College of Engineering
                     </div>
                     <div className="mt-2 inline-block bg-neo-green/20 text-neo-green px-2 py-0.5 font-[family-name:var(--font-mono)] text-xs font-bold border border-neo-green/30">
-                      SGPA: 9.10
+                      GPA: 9.02
                     </div>
                   </div>
 
