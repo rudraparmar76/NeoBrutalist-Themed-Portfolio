@@ -1,72 +1,57 @@
-import { RiGithubFill, RiLinkedinFill, RiMailLine } from "react-icons/ri";
+"use client";
 
-const socials = [
-  { href: "https://github.com/rudraparmar76", icon: RiGithubFill, hoverColor: "hover:text-neo-yellow" },
-  { href: "https://www.linkedin.com/in/rudra-parmar-089125245/", icon: RiLinkedinFill, hoverColor: "hover:text-neo-purple" },
-  { href: "mailto:rudraparmar1309@gmail.com", icon: RiMailLine, hoverColor: "hover:text-neo-blue" },
-];
+import { useState, useEffect } from "react";
+import PixelPet from "./PixelPet";
 
 export default function Footer() {
+  const [timeStr, setTimeStr] = useState<string>("");
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      setTimeStr(
+        now.toLocaleTimeString("en-US", {
+          timeZone: "Asia/Kolkata",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: true,
+        })
+      );
+    };
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <footer className="bg-black text-white py-16 px-4 border-t-8 border-neo-green font-[family-name:var(--font-mono)] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
-        <div className="col-span-1 md:col-span-2">
-          <h2 className="text-4xl font-black mb-6 font-[family-name:var(--font-display)]">RUDRA.</h2>
-          <p className="text-gray-400 max-w-sm">
-            Designing for the future with the raw aesthetics of the past. No cookies, no trackers, just code.
-          </p>
-        </div>
+    <footer className="w-full pt-8 pb-12 px-4 sm:px-6 text-center font-sans">
+      {/* Credits */}
+      <div className="text-xs text-[var(--muted)]">
+        Designed &amp; Developed by{" "}
+        <span className="font-semibold text-[var(--fg)]">Rudra Parmar</span>
+      </div>
 
-        <div>
-          <h3 className="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SITEMAP</h3>
-          <ul className="space-y-2 text-gray-400">
-            <li>
-              <a href="#" className="hover:text-white hover:underline decoration-neo-pink decoration-2">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="hover:text-white hover:underline decoration-neo-pink decoration-2">
-                Works
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-white hover:underline decoration-neo-pink decoration-2">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-white hover:underline decoration-neo-pink decoration-2">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className="text-[11px] text-[var(--soft)] font-code mt-1">
+        © 2026 All rights reserved.
+      </div>
 
-        <div>
-          <h3 className="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SOCIALS</h3>
-          <div className="flex gap-4">
-            {socials.map(({ href, icon: Icon, hoverColor }) => (
-              <a
-                key={href}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-2xl ${hoverColor} transition-colors`}
-              >
-                <Icon />
-              </a>
-            ))}
-          </div>
+      {/* Live Mumbai Time Pill with Pulsing Dot */}
+      <div className="mt-4 flex items-center justify-center">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--line)] bg-[var(--card)] font-code text-[11px] text-[var(--muted)]">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+          </span>
+          <span>Mumbai, India</span>
+          <span className="text-[var(--line-strong)]">·</span>
+          <span>{timeStr || "Live Local Time"}</span>
         </div>
       </div>
 
-      <div className="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm">
-        <p>© 2026 RUDRA.exe // SYSTEM_END</p>
-      </div>
-
-      <div className="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">
-        BRUTAL
+      {/* Pixel Pet */}
+      <div className="mt-6 flex justify-center">
+        <PixelPet />
       </div>
     </footer>
   );
