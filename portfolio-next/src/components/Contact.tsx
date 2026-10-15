@@ -39,7 +39,7 @@ const socials = [
   },
   {
     name: "LeetCode",
-    href: "https://leetcode.com/u/Rudraa76/",
+    href: "https://leetcode.com/u/V0idx76/",
     icon: RiCodeSSlashLine,
   },
 ];
