@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <ClickSpark sparkColor="rgba(255, 255, 255, 0.4)" sparkCount={6} sparkRadius={16}>
-      <div className="min-h-screen bg-[var(--bg)] text-[var(--fg)] relative selection:bg-[var(--fg)] selection:text-[var(--bg)]">
+      <div className="min-h-screen bg-[var(--bg)] text-[var(--fg)] relative overflow-x-clip selection:bg-[var(--fg)] selection:text-[var(--bg)]">
         {/* Sticky Top Navbar */}
         <Navbar onOpenCommandPalette={() => setIsCommandPaletteOpen(true)} />
 
