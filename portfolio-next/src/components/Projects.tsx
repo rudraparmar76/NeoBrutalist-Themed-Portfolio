@@ -98,6 +98,17 @@ const moreProjects = [
     github: "https://github.com/rudraparmar76",
     demo: "https://sih-algorithm-avengers.vercel.app/",
   },
+  {
+  id: "speak2build",
+  title: "Speak2Build",
+  year: "2026",
+  description:
+    "Voice-first AI pair programmer for VS Code. Transcribes spoken instructions, understands project context, generates reviewable code patches, validates changes, and waits for developer approval.",
+  image: "/Assets/images/Speak2Build.png",
+  tags: ["VS Code", "TypeScript", "Python", "FastAPI", "faster-whisper", "LLM"],
+  github: "https://github.com/rudraparmar76/Speak2Build",
+  demo: "https://speak2build.vercel.app/",
+  },
 ];
 
 export default function Projects() {
