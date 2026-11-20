@@ -34,7 +34,7 @@ const socials = [
   },
   {
     name: "Mail",
-    href: "mailto:rudraparmar1309@gmail.com",
+    href: "mailto:rudrraa76@gmail.com",
     icon: RiMailLine,
   },
   {
