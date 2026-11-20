@@ -68,7 +68,7 @@ export default function Contact() {
       // Fallback: mailto
       const subject = `Project Inquiry from ${formData.name}`;
       const body = `${formData.message}\n\nFrom: ${formData.email}`;
-      window.location.href = `mailto:rudraparmar1309@gmail.com?subject=${encodeURIComponent(
+      window.location.href = `mailto:rudrraa76@gmail.com?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(body)}`;
       setStatus("sent");
