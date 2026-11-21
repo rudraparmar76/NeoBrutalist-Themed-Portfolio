@@ -84,7 +84,7 @@ export default function Contact() {
           Contact
         </h2>
         <a
-          href="/Assets/Resume/Rudra_Resume.pdf"
+          href="https://drive.google.com/file/d/1JPWoLjiUHIPKziy2pnu3Eg4zHGsWC0hP/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-[var(--line)] bg-[var(--card)] hover:bg-[var(--hover)] hover:border-[var(--line-strong)] text-[var(--fg)] text-xs font-code transition-all group shadow-sm"
@@ -123,19 +123,6 @@ export default function Contact() {
 
       {/* Action Row */}
       <div className="mt-4 grid grid-cols-1 gap-3">
-        {/* <a
-          href="/Assets/Resume/Rudra_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="py-2.5 px-4 rounded-xl border border-[var(--line)] hover:border-[var(--line-strong)] text-[var(--fg)] text-xs font-code transition-colors flex items-center justify-center gap-2 bg-[var(--card)] hover:bg-[var(--hover)] group"
-        >
-          <RiFileTextLine className="text-sm text-[var(--muted)] group-hover:text-[var(--fg)] transition-colors" />
-          <span>View Resume (PDF)</span>
-          <span className="text-[var(--soft)] group-hover:text-[var(--fg)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
-            ↗
-          </span>
-        </a> */}
-
         {!showForm ? (
           <button
             onClick={() => setShowForm(true)}

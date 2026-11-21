@@ -221,7 +221,11 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
       category: "ACTIONS",
       icon: <FiFileText className="text-base" />,
       action: () => {
-        window.open("/Assets/Resume/Rudra_Resume.pdf", "_blank");
+        window.open(
+          "https://drive.google.com/file/d/1JPWoLjiUHIPKziy2pnu3Eg4zHGsWC0hP/view?usp=sharing",
+          "_blank",
+          "noopener,noreferrer"
+        );
         onClose();
       },
     },
