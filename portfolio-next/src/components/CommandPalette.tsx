@@ -202,11 +202,11 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
     {
       id: "act-copy-email",
       title: copied ? "Email Copied!" : "Copy Email Address",
-      subtitle: "rudraparmar1309@gmail.com",
+      subtitle: "rudrraa76@gmail.com",
       category: "ACTIONS",
       icon: <FiCopy className="text-base" />,
       action: () => {
-        navigator.clipboard.writeText("rudraparmar1309@gmail.com");
+        navigator.clipboard.writeText("rudrraa76@gmail.com");
         setCopied(true);
         setTimeout(() => {
           setCopied(false);
